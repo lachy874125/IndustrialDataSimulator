@@ -2,7 +2,7 @@
 
 namespace IndustrialDataSimulator.Interfaces
 {
-    public interface IDataLogger : IDisposable
+    public interface IDataLogger
     {
         Task LogDataAsync(SensorReading sensorReading);
     }

@@ -5,9 +5,14 @@ namespace IndustrialDataSimulator.Services
 {
     public class DataGenerator : IDataGenerator, IDisposable
     {
-        private readonly Random _random = new Random();
+        private const double MIN_TEMPERATURE = 20;
+        private const double MAX_TEMPERATURE = 80;
+        private const double MIN_PRESSURE = 0;
+        private const double MAX_PRESSURE = 100;
+
+        private readonly Random _random = new();
         private Timer? _timer;
-        private bool _isRunning;
+        private bool _isRunning = false;
         private bool _disposed;
 
         public event EventHandler<SensorReading>? NewDataGenerated;
@@ -21,6 +26,8 @@ namespace IndustrialDataSimulator.Services
 
         public void StartGenerating()
         {
+            ObjectDisposedException.ThrowIf(_disposed, this);
+
             if (_isRunning) return;
 
             _isRunning = true;
@@ -31,13 +38,14 @@ namespace IndustrialDataSimulator.Services
         {
             try
             {
-                if (!_isRunning) return;
+                if (!_isRunning || _disposed) return;
 
+                // Generate random sensor reading
                 var reading = new SensorReading
                 {
                     TimeStamp = DateTime.Now,
-                    Temperature = 20 + _random.NextDouble() * (80 - 20),    // 20-80°C
-                    Pressure = _random.NextDouble() * 100   // 0-100 PSI
+                    Temperature = MIN_TEMPERATURE + _random.NextDouble() * (MAX_TEMPERATURE - MIN_TEMPERATURE),
+                    Pressure = MIN_PRESSURE + _random.NextDouble() * (MAX_PRESSURE - MIN_PRESSURE)
                 };
 
                 NewDataGenerated?.Invoke(this, reading);
@@ -60,10 +68,15 @@ namespace IndustrialDataSimulator.Services
 
             if (disposing)
             {
-                StopGenerating();
+                StopGenerating();   // Timer is disposed here
             }
 
             _disposed = true;
+        }
+
+        ~DataGenerator()
+        {
+            Dispose(false);
         }
     }
 }

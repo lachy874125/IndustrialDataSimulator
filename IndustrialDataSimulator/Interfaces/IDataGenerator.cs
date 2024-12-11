@@ -2,7 +2,7 @@
 
 namespace IndustrialDataSimulator.Interfaces
 {
-    public interface IDataGenerator
+    public interface IDataGenerator : IDisposable
     {
         event EventHandler<SensorReading> NewDataGenerated;
         void StartGenerating();
