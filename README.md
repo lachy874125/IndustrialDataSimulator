@@ -1,6 +1,6 @@
 # Industrial Data Simulator
 ## Overview
-This application generates simulated sensor readings of temperature and pressure at regular intervals. The readings are timestamped and printed to the console and logged to a file. The application demonstrates several C# programming concepts and patterns including:
+This application generates simulated sensor readings of temperature and pressure at regular intervals. The readings are timestamped, printed to the console and logged to a file. The application demonstrates several C# programming concepts and patterns including:
 - Dependency injection
 - Asynchronous programming
 - Event-driven architecture
