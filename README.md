@@ -8,6 +8,8 @@ This application generates simulated sensor readings of temperature and pressure
 - Resource management
 - File I/O operations
 
+The project can be built and run with Visual Studio.
+
 ## Project Structure
 
 - Interfaces:
