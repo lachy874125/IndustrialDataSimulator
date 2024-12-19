@@ -1,5 +1,6 @@
 ﻿using IndustrialDataSimulator.Interfaces;
 using IndustrialDataSimulator.Models;
+using WebAPI.Interfaces;
 
 namespace WebAPI.Services
 {

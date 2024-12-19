@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialDataSimulator", "IndustrialDataSimulator\IndustrialDataSimulator.csproj", "{7BF97757-4990-4DB1-B13C-DC7B0A92A7AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "IndustrialDataSimulator\ConsoleApp.csproj", "{7BF97757-4990-4DB1-B13C-DC7B0A92A7AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{96E6EBAA-7A7A-4133-80A9-56F36836BE55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorAPI", "WebAPI\SensorAPI.csproj", "{96E6EBAA-7A7A-4133-80A9-56F36836BE55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

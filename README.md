@@ -22,7 +22,7 @@ The project can be built and run with Visual Studio.
 - Models:
 	- **SensorReading.cs**: Data model for sensor measurements
 
-## Project 2: Web API
+## Project 2: Sensor API
 This project extends the Industrial Data Simulator (Project 1) by implementing it as a web API using ASP.NET Core.
 ### Features
 

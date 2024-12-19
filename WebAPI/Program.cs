@@ -1,6 +1,6 @@
 using IndustrialDataSimulator.Interfaces;
 using IndustrialDataSimulator.Services;
-using WebAPI;
+using WebAPI.Interfaces;
 using WebAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
