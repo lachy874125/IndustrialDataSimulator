@@ -1,5 +1,5 @@
-﻿using IndustrialDataSimulator.Interfaces;
-using IndustrialDataSimulator.Services;
+﻿using ConsoleApp.Interfaces;
+using ConsoleApp.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 class Program

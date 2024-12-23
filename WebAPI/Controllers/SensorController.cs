@@ -1,10 +1,8 @@
-﻿using IndustrialDataSimulator.Models;
+﻿using ConsoleApp.Models;
 using Microsoft.AspNetCore.Mvc;
-using WebAPI.Interfaces;
+using SensorAPI.Interfaces;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
-namespace WebAPI.Controllers
+namespace SensorAPI.Controllers
 {
     [Route("[controller]")]
     [ApiController]

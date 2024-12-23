@@ -1,7 +1,7 @@
-﻿using IndustrialDataSimulator.Interfaces;
-using IndustrialDataSimulator.Models;
+﻿using ConsoleApp.Interfaces;
+using ConsoleApp.Models;
 
-namespace IndustrialDataSimulator.Services
+namespace ConsoleApp.Services
 {
     public class FileLogger : IDataLogger, IDisposable
     {

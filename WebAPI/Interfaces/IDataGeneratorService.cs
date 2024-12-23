@@ -1,6 +1,6 @@
-﻿using IndustrialDataSimulator.Models;
+﻿using ConsoleApp.Models;
 
-namespace WebAPI.Interfaces
+namespace SensorAPI.Interfaces
 {
     public interface IDataGeneratorService
     {

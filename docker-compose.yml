@@ -1,0 +1,6 @@
+services:
+  sensorapi:
+    image: ${DOCKER_REGISTRY-}sensorapi
+    build:
+      context: .
+      dockerfile: WebAPI/Dockerfile

@@ -1,7 +1,7 @@
-using IndustrialDataSimulator.Interfaces;
-using IndustrialDataSimulator.Services;
-using WebAPI.Interfaces;
-using WebAPI.Services;
+using ConsoleApp.Interfaces;
+using ConsoleApp.Services;
+using SensorAPI.Interfaces;
+using SensorAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

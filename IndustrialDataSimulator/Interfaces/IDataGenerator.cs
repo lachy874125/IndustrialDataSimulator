@@ -1,6 +1,6 @@
-﻿using IndustrialDataSimulator.Models;
+﻿using ConsoleApp.Models;
 
-namespace IndustrialDataSimulator.Interfaces
+namespace ConsoleApp.Interfaces
 {
     public interface IDataGenerator : IDisposable
     {

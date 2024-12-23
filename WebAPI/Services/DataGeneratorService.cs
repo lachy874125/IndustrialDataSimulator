@@ -1,8 +1,8 @@
-﻿using IndustrialDataSimulator.Interfaces;
-using IndustrialDataSimulator.Models;
-using WebAPI.Interfaces;
+﻿using ConsoleApp.Interfaces;
+using ConsoleApp.Models;
+using SensorAPI.Interfaces;
 
-namespace WebAPI.Services
+namespace SensorAPI.Services
 {
     public class DataGeneratorService : BackgroundService, IDataGeneratorService
     {

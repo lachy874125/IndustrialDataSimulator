@@ -1,4 +1,4 @@
-﻿namespace IndustrialDataSimulator.Models
+﻿namespace ConsoleApp.Models
 {
     public class SensorReading
     {
